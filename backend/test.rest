@@ -1,0 +1,29 @@
+POST http://localhost:8000/getGeneratedImages/
+Content-Type: application/json
+
+{ "userId": 4 }
+
+###
+POST http://localhost:8000/cleanImages/
+Content-Type: application/json
+
+{ "userId": 1, "urll": "https://res.cloudinary.com/dnmy80tpe/image/upload/v1715017415/image5-uncleaned_q5dkbj.jpg" }
+
+###
+POST http://localhost:8000/generateImages/
+Content-Type: application/json
+
+{ "userId": 4, "normal": 2, "cnv": , "dme": 2, "drusen": 2 }
+
+###
+POST http://localhost:8000/segmentedImages/
+Content-Type: application/json
+
+{ "userId": 4, "generatedImageId": 20 }
+
+
+###
+POST http://localhost:8000/api/signup/
+Content-Type: application/json
+
+{ "username": "hashir7", "first_name": "Muhammad Hashir", "last_name": "Malik", "password": "hashir1234" }
